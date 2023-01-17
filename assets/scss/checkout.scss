@@ -1,0 +1,71 @@
+// =============================================================================
+// Stencil Checkout  - Customize the checkout experience
+// =============================================================================
+//
+// This file is for checkout customizations for Default one-page checkout.
+//
+// -----------------------------------------------------------------------------
+
+
+.header-logo
+{
+    margin: unset;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+    margin: unset; 
+}
+
+.header-logo__link {
+    display: flex;
+    justify-content: flex-start;
+    margin: unset;
+}
+
+@font-face {
+    font-family: "Garamond FB Disp Lt";
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    font-weight: normal; 
+    font-style: normal; 
+    font-display: auto; 
+    
+    
+    src: url("//fastly-cloud.typenetwork.com/projects/1790/28d_vdef_baa6e6f83f_23cb.woff2?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e") format("woff2"),
+         url("//fastly-cloud.typenetwork.com/projects/1790/28d_vdef_baa6e6f83f_23cb.woff?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e") format("woff");
+    
+    }
+
+    .header, .productView-price, .productView-info-value, .tab-title, .productView-title, .card-text {
+
+       font-family: 'Garamond FB Disp Lt', sans-serif !important;
+    }
+
+   .header-logo-image-container{
+    margin-left: 50px;
+   }
+   .card-title{
+
+   font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif !important;
+   letter-spacing: 2px;
+   font-size: 20px;
+   line-height: 5px;
+  font: inherit;
+   }
+   .page-heading{
+    background-color: #fddfe5;
+   }
+   .card-text{
+    color: #f9a0b1 !important;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+   }
+
+   .icon--ratingEmpty svg {
+    fill: #f9a0b1;
+}
+.button--primary {
+    background-color: #f9a0b1;
+    border-color: #f9a0b1;
+    color: #fff;
+}

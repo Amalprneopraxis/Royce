@@ -1,0 +1,1278 @@
+<style>
+
+     .productView-thumbnail-link {
+    height: 100% !important;
+    max-width: 90% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    }
+    .productView-thumbnail-link img
+    {
+            width: 100% !important;
+    }
+.productView-thumbnails .slick-next
+    {
+     width: 30px;
+    height: 30px;
+    top: auto;
+    bottom: -44px;
+    margin-right: 40%;
+    }
+.productView-thumbnails .slick-prev
+    {
+    width: 30px;
+    height: 30px;
+    top: -18px;
+    bottom: auto;
+    margin-left: 35%;
+    }
+.productView-thumbnails .draggable
+    {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    }
+.productView-thumbnails .slick-next::before, .slick-prev::before {
+    height: 10px;
+    width: 10px;
+}
+.productView-thumbnails .slick-next::before {
+    background-image: url(//cdn11.bigcommerce.com/s-uok04hg6nb/product_images/uploaded_images/down1-arrow.png);
+    fill: #242424!important;
+    font-size: 25px;
+    font-weight: 800;
+    width: 16px;
+}
+.productView-thumbnails .slick-prev::before {
+    background-image: url(//cdn11.bigcommerce.com/s-uok04hg6nb/product_images/uploaded_images/up-arrow-angle.png);
+    fill: #242424!important;
+    font-size: 25px;
+    font-weight: 800;
+    width: 16px;
+    }
+    .primageszoomthumb .slick-disabled {
+    cursor: pointer;
+    opacity: 1;
+        }
+    .primageszoomthumb
+    {
+        display: flex;
+    align-items: center;
+    }
+@media screen and (max-width: 800px) and (min-width: 60px) {
+.productView-thumbnails .slick-next
+    {
+     
+    margin-right: 12%;
+    }
+.productView-thumbnails .slick-prev
+    {
+    
+    margin-left: 20%;
+    }
+    .productView-details.product-data {
+    order: 0;
+    }
+    .productView
+    {
+          display: block !important;
+    }
+    .productview-sku-name{
+            font-size: 8px !important;
+        }
+        .productview-sku-value{
+            font-size: 9px;
+        }
+    .productView-title  span{
+        font-size: 12px !important;
+            line-height: 15px;
+    display: block;
+    }
+    .price-info-msg
+        {
+            font-size: 10px;
+                line-height: 1.5;
+        }
+    [data-content-region*="product_below_price"] [data-sub-layout]
+        {
+            padding-left: 0px;
+            padding-right: 0px !important;
+        }
+        [data-content-region*="product_below_price"] [data-sub-layout-container] 
+        {
+           margin-bottom: 5px;
+        }
+}
+@media screen and (min-width: 800px) {
+    .productView-product, .productView-options,.productView-details .socialLinks
+    {
+            margin-left: 8.33333%;
+    }
+    .productView-product {
+    padding-bottom: 0rem;
+    }
+    .productView-product {
+        padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    }
+        }
+        .productView-img-container 
+        {
+             transition: linear all 1s;
+              -webkit-transition-delay: 1s;
+              transition-delay: 1s;
+        }
+        [data-content-region*="product_below_price"] [data-sub-layout]
+        {
+            padding-left: 0px;
+            padding-right: 11px;
+        }
+        [data-content-region*="product_below_price"] [data-sub-layout-container] 
+        {
+            margin-right: 0px;
+        }
+        .easyzoom-flyout { display:none !important; }
+[data-test-id*="product-set-left-arrow"] , [data-test-id*="product-set-right-arrow"] 
+        {
+                background: transparent;
+        }
+[data-test-id*="product-set-left-arrow"]   svg path, [data-test-id*="product-set-right-arrow"] svg path
+        {
+            fill: #000;
+        }
+[data-test-id*="product-set-left-arrow"]:hover , [data-test-id*="product-set-left-arrow"]:focus , [data-test-id*="product-set-right-arrow"]:hover, [data-test-id*="product-set-right-arrow"]:focus
+        {
+                background: transparent !important;
+        }
+.sd-product-set__bullet
+        {
+                border: 1px solid rgb(68 68 68);
+        }
+.sd-product-set__bullet-active
+        {
+            background-color: rgb(106 106 106) !important;
+        }
+        .customizearrow
+    {
+    float: right;
+    margin-top: 30px;
+    }
+    .definitionList
+    {
+    font-size: .7rem!important;
+    line-height: 1.9;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 300;
+    }
+    .cart-item-value 
+    {
+        font-size: 1.2rem!important;
+        width: 100%;
+        text-align: initial;
+        display: block;
+    }
+    .cart-item-info .has-text-secondary:hover
+    {
+        background-color: #ffffff;
+    color: #6a6a6a!important;
+    }
+    .cart-remove {
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    float: left;
+    padding: 0 !important;
+    margin-top: 0.14286rem;
+    padding: 0.21429rem;
+    transition: background-color 0.15s ease;
+    width: auto;
+    margin-left: 0px;
+        width: 100%;
+        text-align: initial;
+    }
+    .cart-item-name__label
+    {
+        line-height: 1.125;
+        font-size: 1.45rem!important;
+        font-weight: 500;
+        text-decoration: none;
+    }
+        .cartcustomiser
+        {
+          padding-right: 10px;  
+        }
+    .cartactivepdp .showactive
+        {
+            border: 1px solid #aeaeae;
+            margin: 2px;
+            height: 120px;
+/*            box-shadow: 1px 0px 4px 2px #decfcf;*/
+        }
+        .smallimgss ul li
+        {
+            padding: 2px;
+        }
+        .viewmorecustomizer
+        {
+            font-size: 10px;
+            text-decoration: none;
+        }
+        .viewmorecustomizer:hover
+        {
+            text-decoration: underline;
+        }
+        .productView-options{
+            margin-bottom: 0px;
+        }
+        .productnote{
+          margin-bottom: 0;
+        }
+        /* varient section css */
+
+        .your-size{
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #585858;
+   }
+   .appendsize{
+       font-size: .9em;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    color: #585858;
+   }
+   .colordiv {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+    .colordiv-outline {
+        border-radius: 70px;
+        border: 2px solid #CCCCCC;
+        padding: 1px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .outercolor2btn {
+        border: 2px solid #000;
+    }
+
+    .productView {
+        width: 85%;
+        margin: auto;
+    }
+
+    .option-none {
+        display: none !important;
+    }
+
+    #sizeNcup {
+        margin-bottom: 0px;
+        background-color: #fff;
+    }
+
+
+    .variant-list {
+        overflow-x: auto;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #f1f1f1;
+        background-color: #fff;
+    }
+
+    .table-td-width{
+        padding: 2px 16px;
+        cursor: pointer;
+        font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+        font-size: 0.76em;
+        color: #585858;
+    }
+    .table-th-width{
+        padding: 2px 10px;
+        font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+        font-size: 1em;
+        color: #585858;
+    }
+    .table-th-center{
+        text-align: center;
+        padding: 0px;
+        font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+        font-size: 1em;
+        color: #585858;
+    }
+
+    .selected {
+        background-color: #f9a0b1;
+    }
+
+    /* css for scrollbar */
+
+    /* width */
+    .variant-list::-webkit-scrollbar {
+        width: 10px;
+
+    }
+
+    /* Track */
+    .variant-list::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    .variant-list::-webkit-scrollbar-thumb {
+        background: #f9a0b1;
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    .variant-list::-webkit-scrollbar-thumb:hover {
+        background: #f9a0b1;
+    }
+    .tab {
+  overflow: hidden;
+  
+
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+ 
+ 
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px ;
+  transition: 0.3s;
+  font-size: 14px;
+  
+}
+
+ 
+
+.heading{
+    font-size: 1.80203em;
+    font-family:'Garamond FB Disp Lt' !important;
+    color: #585858;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #585858;
+    border-color: #f6f6f6;
+
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+ border-bottom: 2px solid  #f9a0b1;
+ 
+
+}
+.tablinks:hover {
+    background-color: transparent;
+    color: #000;
+}
+.tablinks.active{
+    background-color: transparent;
+    color: #000;
+    outline: 2px solid #ffff !important;
+ outline-offset: 1px !important;
+
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px 6px 12px;
+  
+  border-top: none;
+}
+</style>
+{{#each product.custom_fields}}
+{{#if name '==' 'Related_sku'}}
+{{inject 'related_sku' value}}
+{{/if}}
+
+{{#if name '==' 'colour'}}
+{{inject 'productcolor' value}}
+{{/if}}
+{{/each}}
+<div class="productView" {{#if settings.data_tag_enabled}} data-event-type="product" data-entity-id="{{product.id}}"
+    data-name="{{product.title}}" data-product-category="
+      {{#each product.category}}
+          {{#if @last}}{{this}}{{else}}{{this}}, {{/if}}
+      {{/each}}" data-product-brand="{{product.brand.name}}" data-product-price="
+      {{#or customer (unless settings.hide_price_from_guests)}}
+          {{#if product.price.with_tax}}
+              {{product.price.with_tax.value}}
+          {{else}}
+              {{product.price.without_tax.value}}
+          {{/if}}
+      {{else}}
+          {{lang 'common.login_for_pricing'}}
+      {{/or}}" data-product-variant="single-product-option" {{/if}}>
+
+    {{#each product.reviews.messages}}
+    {{#if error}}
+    {{> components/common/alert/alert-error error}}
+    {{/if}}
+    {{#if success}}
+    {{> components/common/alert/alert-success success}}
+    {{/if}}
+    {{/each}}
+   <!-- Thumbnail image section start -->
+
+    <section class="productView-images" data-image-gallery>
+        {{!--
+        Note that these image sizes are coupled to image sizes used in /assets/js/theme/common/product-details.js
+        for variant/rule image replacement
+        --}}
+        <div class="row primageszoomthumb">
+            <div class="small-2 large-2 columns" style="padding-left: 0px;">
+
+                <ul class="productView-thumbnails" {{#gt product.images.length 5}} data-slick='{
+                "infinite": false,
+                "vertical": true,
+                "verticalSwiping": true,
+                "dots": false,
+                "slidesToShow": 5,
+                "slidesToScroll": 2
+            }' {{/gt}}>
+                    {{#each product.images}}
+                    <li class="productView-thumbnail">
+                        <a class="productView-thumbnail-link"
+                            href="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.zoom_size}}"
+                            data-image-gallery-item
+                            data-image-gallery-new-image-url="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.product_size}}"
+                            data-image-gallery-new-image-srcset="{{getImageSrcset this use_default_sizes=true}}"
+                            data-image-gallery-zoom-image-url="{{getImageSrcset this (cdn ../theme_settings.default_image_product) 1x=../theme_settings.zoom_size}}">
+                            {{> components/common/responsive-img
+                            image=this
+                            fallback_size=../theme_settings.productview_thumb_size
+                            lazyload=../theme_settings.lazyload_mode
+                            }}
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="small-10 large-10 columns">
+                {{#if product.images.length '>' 1 }}
+                {{> components/carousel-content-announcement}}
+                {{/if}}
+
+                <figure class="productView-image" data-image-gallery-main {{#if product.main_image}}
+                    data-zoom-image="{{getImageSrcset product.main_image (cdn theme_settings.default_image_product) 1x=theme_settings.zoom_size }}"
+                    {{/if}}>
+
+                    <div class="productView-img-container">
+                        {{!-- Remove the surrounding a-element if there is no main image. --}}
+                        {{#if product.main_image}}
+                        <a href="{{getImageSrcset product.main_image (cdn theme_settings.default_image_product) 1x=theme_settings.zoom_size}}"
+                            target="_blank" {{#if schema}} itemprop="image" {{/if}}>
+                            {{/if}}
+                            {{> components/common/responsive-img
+                            image=product.main_image
+                            class="productView-image--default"
+                            fallback_size=theme_settings.product_size
+                            lazyload=theme_settings.lazyload_mode
+                            default_image=theme_settings.default_image_product
+                            otherAttributes="data-main-image"
+                            }}
+                            {{!-- Remove the surrounding a-element if there is no main image. --}}
+                            {{#if product.main_image}}
+                        </a>
+                        {{/if}}
+                    </div>
+                   
+                </figure>
+                <!-- {{#if settings.show_wishlist}}
+                {{> components/common/wishlist-dropdown}}
+                {{/if}} -->
+            </div>
+        </div>
+    </section>
+<!-- Thumbnail image section End -->
+    <section class="productView-details product-data">
+        <div class="productView-product">
+            <h1 class="productView-title">{{product.title}}</h1>
+            <!-- {{#if product.brand}}
+            <h2 class="productView-brand">
+                <a href="{{product.brand.url}}"><span>{{product.brand.name}}</span></a>
+            </h2>
+            {{/if}} -->
+           
+            <div class="productView-rating">
+                {{#if settings.show_product_rating}}
+                {{> components/products/ratings rating=product.rating}}
+                {{#if product.num_reviews '>' 0}}
+                <a href="{{product.url}}{{#if is_ajax}}#product-reviews{{/if}}" id="productReview_link">
+                    {{lang 'products.reviews.link_to_review' total=product.num_reviews}}
+                </a>
+                {{else}}
+                <span>{{lang 'products.reviews.link_to_review' total=product.num_reviews}}</span>
+                {{/if}}
+                {{/if}}
+                {{#if settings.show_product_reviews}}
+                <a href="{{product.url}}{{#if is_ajax}}#write_review{{/if}}"
+                    class="productView-reviewLink productView-reviewLink--new" {{#unless
+                    is_ajax}}data-reveal-id="modal-review-form" {{/unless}} role="button">
+                    {{lang 'products.reviews.new'}}
+                </a>
+                {{#unless is_ajax}}
+                {{> components/products/modals/writeReview}}
+                {{/unless}}
+                {{/if}}
+            </div>
+            {{product.detail_messages}}
+            <!-- <div>
+                {{#if theme_settings.show_custom_fields_tabs '!==' true}}
+                {{#each product.custom_fields}}
+                   <dt class="productView-info-name">{{name}}:</dt>
+                 <dd class="productView-info-value">{{{value}}}</dd>
+                {{/each}}
+                {{/if}}
+            </div> -->
+            <div>
+                {{#if product.custom_fields }}
+                {{#each product.custom_fields}}
+                {{#if name '===''short dec'}}
+                <dd class="productView-info-value cusvalue">{{{value}}}</dd>
+                {{/if}}
+                {{/each}}
+                {{/if}}
+            </div>
+
+            {{#if product.call_for_price}}
+            <p class="productView-price">
+                <span>{{product.call_for_price}}</span>
+            </p>
+            {{/if}}
+            <div class="productView-price">
+                {{#or customer (unless settings.hide_price_from_guests)}}
+                {{> components/products/price price=product.price}}
+                {{else}}
+                {{> components/common/login-for-pricing}}
+                {{/or}}
+            </div>
+            {{{region name="product_below_price"}}}
+            <dl class="productView-info">
+                <dt class="productView-info-name sku-label" {{#unless product.sku}} style="display: none;" {{/unless}}>
+                    {{lang 'products.sku'}}</dt>
+                <dd class="productView-info-value" data-product-sku>{{product.sku}}</dd>
+                <dt class="productView-info-name upc-label" {{#unless product.upc}} style="display: none;" {{/unless}}>
+                    {{lang 'products.upc'}}</dt>
+                <dd class="productView-info-value" data-product-upc>{{product.upc}}</dd>
+                {{#if product.condition}}
+                <dt class="productView-info-name">{{lang 'products.condition'}}</dt>
+                <dd class="productView-info-value">{{product.condition}}</dd>
+                {{/if}}
+                {{#if product.availability}}
+                <dt class="productView-info-name">{{lang 'products.availability'}}</dt>
+                <dd class="productView-info-value">{{product.availability}}</dd>
+                {{/if}}
+                {{#all product.weight theme_settings.show_product_weight}}
+                <dt class="productView-info-name">{{lang 'products.weight'}}</dt>
+                <dd class="productView-info-value" data-product-weight>{{product.weight}}</dd>
+                {{/all}}
+                {{#all product.width product.height product.depth theme_settings.show_product_dimensions}}
+                <dt class="productView-info-name">{{lang 'products.width'}}</dt>
+                <dd class="productView-info-value" data-product-width>
+                    {{product.width}}
+                    {{#if settings.measurements.length '==' 'Centimeters'}}
+                    ({{lang 'products.measurement.metric'}})
+                    {{else}}
+                    ({{lang 'products.measurement.imperial'}})
+                    {{/if}}
+                </dd>
+                <dt class="productView-info-name">{{lang 'products.height'}}</dt>
+                <dd class="productView-info-value" data-product-height>
+                    {{product.height}}
+                    {{#if settings.measurements.length '==' 'Centimeters'}}
+                    ({{lang 'products.measurement.metric'}})
+                    {{else}}
+                    ({{lang 'products.measurement.imperial'}})
+                    {{/if}}
+                </dd>
+                <dt class="productView-info-name">{{lang 'products.depth'}}</dt>
+                <dd class="productView-info-value" data-product-depth>
+                    {{product.depth}}
+                    {{#if settings.measurements.length '==' 'Centimeters'}}
+                    ({{lang 'products.measurement.metric'}})
+                    {{else}}
+                    ({{lang 'products.measurement.imperial'}})
+                    {{/if}}
+                </dd>
+                {{/all}}
+                {{#if product.min_purchase_quantity}}
+                <dt class="productView-info-name">{{lang 'products.min_purchase_quantity'}}</dt>
+                <dd class="productView-info-value">{{lang 'products.purchase_units'
+                    quantity=product.min_purchase_quantity}}</dd>
+                {{/if}}
+                {{#if product.max_purchase_quantity}}
+                <dt class="productView-info-name">{{lang 'products.max_purchase_quantity'}}</dt>
+                <dd class="productView-info-value">{{lang 'products.purchase_units'
+                    quantity=product.max_purchase_quantity}}</dd>
+                {{/if}}
+                {{#if product.gift_wrapping_available}}
+                <dt class="productView-info-name">{{lang 'products.gift_wrapping'}}</dt>
+                <dd class="productView-info-value">{{lang 'products.gift_wrapping_available'}}</dd>
+                {{/if}}
+                {{#if product.shipping}}
+                {{#if product.shipping.calculated}}
+                <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
+                <dd class="productView-info-value">{{lang 'products.shipping_calculated'}}</dd>
+                {{else}}
+                {{#if product.shipping.price.value '===' 0}}
+                <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
+                <dd class="productView-info-value">{{lang 'products.shipping_free'}}</dd>
+                {{else}}
+                <dt class="productView-info-name">{{lang 'products.shipping'}}</dt>
+                <dd class="productView-info-value">{{lang 'products.shipping_fixed'
+                    amount=product.shipping.price.formatted}}</dd>
+                {{/if}}
+                {{/if}}
+                {{/if}}
+
+                {{#if settings.bulk_discount_enabled}}
+                <div class="productView-info-bulkPricing">
+                    {{> components/products/bulk-discount-rates bulk_discount_rates=product.bulk_discount_rates}}
+                </div>
+                {{/if}}
+
+
+            </dl>
+        </div>
+    </section>
+    <section class="productView-details product-options">
+        <div class="productView-options">
+            {{#if product.release_date }}
+            <p>{{product.release_date}}</p>
+            {{/if}}
+            <form class="form" method="post" action="{{product.cart_url}}" enctype="multipart/form-data"
+                data-cart-item-add>
+                <input type="hidden" name="action" value="add">
+
+                <input type="hidden" name="product_id" value="{{product.id}}" />
+                <div data-product-option-change class="option-none">
+                    {{inject 'showSwatchNames' theme_settings.show_product_swatch_names}}
+
+                    {{#each product.options}}
+                    {{{dynamicComponent 'components/products/options'}}}
+                    {{/each}}
+                </div>
+
+                <div class="form-field form-field--stock{{#unless product.stock_level}} u-hiddenVisually{{/unless}}">
+                    <label class="form-label form-label--alternate">
+                        {{lang 'products.current_stock'}}
+                        <span data-product-stock>{{product.stock_level}}</span>
+                    </label>
+                </div>
+
+                <!-- product color section -->
+                <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5 color">
+                    <h6 class="select-titlecs">COLOUR <span class="colorselected"
+                            style="font-weight:200 !important;"></span></h6>
+                </ul>
+
+                <p><span class="your-size">Your size:</span> <span class="appendsize"></span></p>
+                <div>
+
+                    <!-- <table>
+                          <tr class="size">
+                          </tr>
+                      </table> -->
+
+                    <div>
+                        {{!-- <table>
+
+                            <tr>
+                                <th scope="col"></th>
+                                {{#each product.options}}
+                                {{#if display_name '==' 'Cup size'}}
+                                {{#each values}}
+                                <th scope="col"> {{label}}</th>
+                                {{/each}}
+                                {{/if}}
+                                {{/each}}
+                            </tr>
+
+
+                            {{#each product.options as |main|}}
+                            {{#or (if display_name '==' 'Size') (if display_name '==' 'Cup size') }}
+                            {{#each values}}
+                            <tr>
+                                {{#if ../display_name '==' 'Size' }}
+                                <th scope="row"> {{label}}</th>
+                                <td> {{label}}</td>
+                                {{/if}}
+                                {{#if ../display_name '==' 'Cup size'}}
+                                <td> {{label}}</td>
+                                {{/if}}
+                            </tr>
+                            {{/each}}
+                            {{/or}}
+                            {{/each}}
+
+                        </table>--}}
+
+                        <div class="variant-list">
+                            <table id="sizeNcup"></table>
+                        </div>
+                        </br>
+                        </br>
+                        {{> components/products/add-to-cart with_wallet_buttons=true}}
+                        {{#if product.out_of_stock}}
+                        {{#if product.out_of_stock_message}}
+                        {{> components/common/alert/alert-error product.out_of_stock_message}}
+                        {{else}}
+                        {{> components/common/alert/alert-error (lang 'products.sold_out')}}
+                        {{/if}}
+                        {{/if}}
+            </form>
+            {{#if settings.show_wishlist}}
+            {{> components/common/wishlist-dropdown}}
+            {{/if}}
+        </div>
+        {{> components/common/share url=product.url}}
+
+    </section>
+</div>
+</div>
+    <!-- <article class="productView-description">
+        {{#if theme_settings.show_product_details_tabs}}
+        {{> components/products/description-tabs}}
+        {{else}}
+        {{> components/products/description}}
+        {{/if}}
+    </article> -->
+    
+<!--//tab description section-->
+<div class=" ">
+    <div class="large-6 columns"> <h1 class="heading"> Overview </h1>
+        <dt class="productView-info-name sku-label" {{#unless product.sku}} style="display: none;" {{/unless}}>
+            {{lang 'products.sku'}}</dt>
+        <dd class="productView-info-value" data-product-sku>{{product.sku}}</dd>
+    </div>
+    <div class="large-6 columns">
+    
+
+<div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'Delivery')">Delivery</button>
+    <button class="tablinks" onclick="openTab(event, 'Material')">Material & Care</button>
+    <button class="tablinks" onclick="openTab(event, 'Experts')">Ask Our Experts</button>
+    <button class="tablinks" onclick="openTab(event, 'VAT')">VAT Exemption</button>
+  </div>
+  
+  <div id="Delivery" class="tabcontent" style="display: block;">
+    
+    <p>Delivery available from £3.95 for standard UK delivery (3-5 days).
+        UK standard delivery is free for orders over £75.
+        
+        Express delivery is also available, please see our delivery page for further details.
+        
+        Royce will endeavor to despatch all orders received Monday to Friday before 3pm on the same day. Any orders placed after 3pm or over the weekend and bank holidays will be despatched the following working day.
+        
+        Free UK return on all orders.</p>
+  </div>
+  <div id="Material" class="tabcontent">
+    
+    {{#each product.custom_fields}}
+    {{#if name '===' 'Material & Care'}}
+    {{value}}
+    {{/if}}
+    
+    {{/each}}
+
+
+
+
+  </div>
+  
+  <div id="Experts" class="tabcontent">
+    
+    <p>Royce is passionate about making sure you have the right bra.
+
+        We recommend that you are fitted by one of our trained bra fitters, you can find details on our stockist page.
+        
+        We also understand that this isn’t always possible, if you need any advice on finding the right bra for you please contact us via email or phone and one of our experts will be willing to advise.
+    </p> 
+  </div>
+  
+  <div id="VAT" class="tabcontent">
+    
+    <p>If you are eligible for VAT exemption for any of our bras following surgery, please create an account before placing your order.
+
+        VAT exemption only applies to bras fitted with pockets.
+        
+        This only applies to UK customers.
+
+    </p>
+  </div>
+</div>
+{{{product.description}}}
+</div>
+
+<div id="previewModal" class="modal modal--large" data-reveal>
+    {{> components/common/modal/modal-close-btn }}
+    <div class="modal-content"></div>
+    <div class="loadingOverlay"></div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    //RJ LOGIC
+    var jsContext = JSON.parse({{ jsContext }});
+    var formatoptions = jsContext.related_sku
+    var productsize = jsContext.productsize
+    var productColor = jsContext.productcolor
+    var pdid = jsContext.productId
+    // var splarray  = jsondata.split(",");
+    console.log(formatoptions)
+
+    var parts = formatoptions.split(',');
+
+    var pdskuLength = parts.length
+
+    console.log(pdskuLength);
+    parts.forEach(function (sku) {
+
+        console.log("sku value", typeof (sku));
+
+
+        getProductInfo(sku)
+
+    });
+
+    var coll = document.getElementsByClassName("cusvalue");
+console.log("cuval" ,coll );
+
+    console.log("samsonite", productColor, pdid)
+    var models = [];
+    var size = [];
+
+    //var pd_cat=cat
+    //console.log("samsonite",productModel)
+    function getProductInfo(skus) {
+        var data1 = fetch('/graphql', {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer {{ settings.storefront_api.token }}`
+            },
+            body: JSON.stringify({
+                query:
+                    `query VariantById  {
+     site {
+       product(sku:"${skus}") {
+         name
+         sku
+         path
+         customFields
+        {
+          edges
+          {
+            node
+            {
+              entityId
+              name
+              value
+            }
+          }
+        }
+         defaultImage {
+           url(width: 500, height: 500)
+         }
+         prices {
+           price {
+             ...PriceFields
+           }
+           salePrice {
+             ...PriceFields
+           }
+           retailPrice {
+             ...PriceFields
+           }
+         }
+         width {
+           ...DimensionFields
+         }
+         height {
+           ...DimensionFields
+         }
+         depth {
+           ...DimensionFields
+         }
+       }
+     }
+   }
+   fragment PriceFields on Money {
+     value
+     currencyCode
+   }
+   fragment DimensionFields on Measurement {
+     value
+     unit
+   }`
+            }),
+        })
+            .then(res => res.json())
+            .then(royce => {
+                console.log('royce', royce, 'sku', skus);
+
+                var sizemain
+                var pdpath
+                var pdsku
+                var colors
+                var selectedColor
+                var arr
+                var colors_hex
+
+
+                // console.log("custommain", main)
+
+                royce.data.site.product.customFields.edges.forEach(custommain => {
+                    //console.log("custommain",custommain)
+
+                    // if (custommain.node.name == "Sizes") {
+                    //     sizemain = custommain.node.value
+                    //     sizepath = main.node.path
+                    //     sizeid = main.node.entityId
+
+                    // }
+
+                    if (custommain.node.name == "colour") {
+
+                        colors = custommain.node.value
+                        pdpath = royce.data.site.product.path
+                        pdsku = royce.data.site.product.sku
+                    }
+                    if (custommain.node.name == "colour_hex-value") {
+
+                        colors_hex = custommain.node.value
+                    }
+
+
+                })
+
+                size.push({ 'size': sizemain, 'path': pdpath, "id": pdsku, "color": colors, "colorhex": colors_hex })
+                pdColorDisplay()
+            })
+
+
+    }
+    console.log("size", size)
+    function pdColorDisplay() {
+
+        console.log("size", size)
+        if (size.length == pdskuLength) {
+            size.forEach(gotSize => {
+                console.log("neov gotSize", gotSize)
+                // console.log('neov product size', productColor)
+
+                if (productColor === gotSize.color) {
+
+                    $('.color').append(`<li data-size="" style="display: flex;
+     align-items: center;"><div class="" style="display:flex;"></div><a class="sizePd getColor  "
+          href="${gotSize.path}" data-size=""
+          data-color="${gotSize.color}"><span class="colordiv-outline outercolor2btn">
+              <span class="colordiv colorAppend${gotSize.id}" ></span></span></a></div><div>${gotSize.color}</div></li>`)
+                    // $('.colorselected').append(`${gotSize.color}`)
+
+                    // now get all variant colours from size siblings
+
+
+
+                    selectedColor = $('.selected').data('color')
+                    console.log("color", selectedColor)
+
+
+
+                    //$('.colorselected').append(`${customFieldOne.node.value}`)
+                }
+                else {
+                    $('.color').append(`<li data-size="" style="display: flex;
+     align-items: center;"><div class="" style="display:flex;"></div><a class="sizePd getColor  "
+          href="${gotSize.path}" data-size=""
+          data-color="${gotSize.color}"><span class="colordiv-outline ">
+              <span class="colordiv colorAppend${gotSize.id}"></span></span></a></div><div>${gotSize.color}</div></li>`)
+
+
+                }
+
+                setTimeout(function () {
+
+                    $(`.colorAppend${gotSize.id}`).css({ 'background-color': `${gotSize.colorhex}` });
+                }, 500);
+
+
+            })
+
+        }
+
+
+
+    };
+    //PRODUCT SELECT LOGIC
+
+    $(document).on('click', '.sizePds', function (e, itemss) {
+
+        e.preventDefault();
+
+        var sizeSelected = $(this).attr('data-size');
+        var colorSelected = $(this).attr('data-color');
+
+        console.log("size, color ", sizeSelected, colorSelected)
+
+        arr.forEach(gotSize => {
+            console.log("neov gotSize", gotSize.size)
+
+
+            if (sizeSelected == gotSize.size) {
+
+
+                // find the size siblings of the products 
+                var sizeSiblings = samsonite.data.site.route.node.products.edges.filter(({ node }) => {
+                    return node.customFields.edges.find(cF => {
+                        if (cF.node.name === 'Sizes') {
+                            return sizeSelected === cF.node.value
+                        } else {
+                            return false
+                        }
+                    })
+                })
+                // find the path of the product if color present
+                var colorSiblings = sizeSiblings.filter(({ node }) => {
+                    console.log(node)
+
+                    return node.customFields.edges.find(cF => {
+                        if (cF.node.name === 'Colour') {
+                            return colorSelected === cF.node.value
+                        } else {
+
+                            return false
+                        }
+                    })
+                })
+
+                // find the path of the product if color not present
+                var nonColorSiblings = sizeSiblings.filter(({ node }) => {
+                    console.log(node)
+
+                    return node.customFields.edges.find(cF => {
+                        if (cF.node.name === 'Colour') {
+                            return colorSelected != cF.node.value
+                        } else {
+
+                            return false
+                        }
+                    })
+                })
+                if (colorSiblings.length > 0) {
+                    console.log("color sibling", colorSiblings[0].node.path)
+                    window.location.replace(`${colorSiblings[0].node.path}`)
+                }
+                else {
+                    console.log("non sibling", nonColorSiblings[0].node.path)
+                    window.location.replace(`${nonColorSiblings[0].node.path}`)
+                }
+
+
+            }
+
+
+        })
+
+
+    });
+</script>
+
+
+<script>
+    // call graphql for all variant sku
+
+    var skuarray = []
+    var fullskuarr = []
+
+    var prodata = fetch("/graphql", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer {{ settings.storefront_api.token }}`,
+        },
+        body: JSON.stringify({
+            query: `
+                       query variantSku{
+     site {
+       product(sku: "{{product.sku}}") {
+         path
+         name
+         sku
+          variants(first:200,isPurchasable:true){
+                edges{
+                    node{
+                        sku
+                        options
+                          {
+                          edges
+                          {
+                              node
+                              {
+                              displayName
+                              values
+                              {
+                                  edges
+                                  {
+                                  node
+                                  {
+                                      label
+                                  }
+                                  }
+                              }
+                              }
+                          }
+                          }
+                  }
+              }
+        }
+         prices {
+           price {
+             ...PriceFields
+           }
+           
+         }
+      
+       }
+     }
+   }
+   fragment PriceFields on Money {
+     value
+   }
+      `,
+        }),
+    })
+        .then((res) => res.json())
+        .then((variant) => {
+            var variant_sku = variant.data.site.product.variants.edges;
+
+            variant_sku.forEach(sku => {
+                var full_sku = sku.node.sku;
+                var single_sku = /(?<=([^-]*-){2}).*/.exec(full_sku)[0];
+                var main_sku = single_sku.replace(/-/g, "");
+
+                // $(".size").append(`<td onclick="sizeFunction('${main_sku}','${full_sku}')" style="width: 42px; border: 1px solid #000;">${main_sku}</td>`);
+                skuarray.push(main_sku);
+                fullskuarr.push(full_sku);
+
+            });
+
+        });
+
+
+
+</script>
+
+
+{{inject "productOptions" product.options}}
+
+<script>
+    var jsContext = JSON.parse({{ jsContext }});
+
+
+    var sizes = jsContext.productOptions.find(e => e.display_name == "Band size")
+    var cups = jsContext.productOptions.find(e => e.display_name == "Cup size")
+
+
+    setTimeout(function () {
+
+
+        var table = $("#sizeNcup")
+        // append the heading which is the cupsize 
+        var rowString = '<tr><th></th>';
+        cups.values.forEach(cupSize => {
+            rowString += `<th class="table-th-center">${cupSize.label}</th>`
+        })
+        rowString += '</tr>';
+        table.append(rowString)
+
+        // now the time to append each rows
+        sizes.values.forEach(size => {
+
+            // Append each row, along with the first column as the value of sizes
+            var rowString = `<tr><th class="table-th-width">${size.label}</th>`;
+            cups.values.forEach(cupSize => {
+
+                // Now the time to check if this combination is available to purchase or not
+                var cssku = `${size.label}${cupSize.label}`
+                if (skuarray.includes(cssku)) {
+
+                    var sizeandcup = `${size.label}${cupSize.label}`
+                    rowString += `<span><td onclick="sizeFunction( '${sizeandcup}','${cupSize.id}','${size.id}',this)" class="table-td-width">${size.label}${cupSize.label}</td></span>`
+
+
+
+
+                } else {
+                    rowString += `<td></td>`
+                }
+            })
+            rowString += '</tr>';
+            table.append(rowString)
+        })
+
+    }, 2500);
+
+    //append data into "your size " section and automatically click variant options 
+    function sizeFunction(size, cup, sizes, data) {
+        $(".appendsize").html(`<span>${size}</span>`)
+        $(`[data-product-attribute-value=${sizes}]`).click();
+        $(`[data-product-attribute-value=${cup}]`).click();
+        $(".table-td-width").removeClass("selected")
+        $(data).addClass("selected");
+
+    }
+
+
+    function sizeFunctions(e) {
+        console.log('afeef')
+        console.log(e)
+
+    }
+    $(".table-td-width").click(function () {
+        console.log(' e si shere')
+
+    })
+
+    $('.left').click(function(){
+        $('#slickcarousel').slick('slickPrev');
+    });
+
+    function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
