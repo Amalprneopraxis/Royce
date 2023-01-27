@@ -1,21 +1,56 @@
+
+<style>
+    .code{
+        width: 30px;
+    height: 30px;
+  
+    }
+</style>
 {{#if items}}
 <div class="accordion-block">
     {{> components/faceted-search/faceted-search-navigation}}
-
-    <div id="facetedSearch-content--{{dashcase facet}}" class="accordion-content{{#unless start_collapsed}} is-close{{/unless}}">
-        <ul id="facetedSearch-navList--{{dashcase facet}}" data-facet="{{facet}}" class="navList" data-has-more-results="{{has_more_results}}">
+    <div id="facetedSearch-content--{{dashcase facet}}" class="accordion-content {{#unless start_collapsed}} is-close{{/unless}}" >
+       <div class="test">
+        <ul id="facetedSearch-navList--{{dashcase facet}}" data-facet="{{facet}}" class="navList test1" data-has-more-results="{{has_more_results}}">
             {{#each items}}
-                <li class="navList-item">
+            {{#if param_name "===" "colors"}}
+          
+         <div ><span class="colcode"></span><span class="colname"></span>
+        </div>
+
+            {{inject "colorName" title}}
+            <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+                      <script>
+                          var jsContext = JSON.parse({{jsContext}});
+                        var  colorName = jsContext.colorName;
+                          var sp = colorName.split(","); 
+                       console.log("cc", sp[0]);
+                       console.log("cd", sp[1]);
+                    //    $(".colname").append( sp[0] );
+                    //    $(".colcode").append(background-color:sp[1]);
+                     
+            
+                          // sp.forEach(colorp => {
+                          //     console.log("dd", colorp)
+                              
+                          // });
+                          // results in: "BigCommerce Coffee Mug"
+                          </script>
+            
+          
+            {{else}}
+
+              <li class="navList-item test2">
                     <a
                         href="{{url}}"
                         class="navList-action navList-action--checkbox{{#if selected}} is-selected{{/if}}"
                         rel="nofollow"
                         data-faceted-search-facet>
                         {{{sanitize title}}}
-                       {{!-- {{#if ../show_product_counts}}
+                       {{#if ../show_product_counts}}
                             <span>({{count}})</span>
                         {{/if}}
-                        --}}
 
                         <span class="navList-action-close" aria-hidden="true">
                             <svg class="icon">
@@ -23,15 +58,18 @@
                             </svg>
                         </span>
                     </a>
-                </li>
+                </li> 
+                {{/if}}
             {{/each}}
         </ul>
-
         {{#if show_more_toggle}}
-            <a href="#facetedSearch-navList--{{dashcase facet}}" role="button" class="toggleLink">
-                <span class="toggleLink-text toggleLink-text--off">{{lang 'search.faceted.show-more'}}</span>
-            </a>
-        {{/if}}
-    </div>
+        <a href="#facetedSearch-navList--{{dashcase facet}}" role="button" class="toggleLink">
+            <span class="toggleLink-text toggleLink-text--off">{{lang 'search.faceted.show-more'}}</span>
+        </a>
+    {{/if}}
+    </div>      
+</div>
 </div>
 {{/if}}
+
+

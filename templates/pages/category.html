@@ -45,7 +45,7 @@ category:
 .toggleLink-text {
     font-size: 13px;
     font-weight: 400;
-    margin-top: -6px;
+    margin-top: -7px;
     margin-left: 3px;
 }
 .navList-action--checkbox::before, .navList-action--checkbox::after{
@@ -61,6 +61,36 @@ category:
 button:hover, button:focus, .button:hover, .button:focus {
     background-color:unset;
     border-color: unset;
+}
+
+
+.disable{
+    display: none!important;
+}
+.test{
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: #fff;
+    text-align: center;
+}
+.test1{
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.test2{
+    margin-right: 25px;
+    margin-bottom:25px;
+    display: inline-block;
+    padding: 0%;
+    background-color: #f6f6f6;
 }
 </style>
 
@@ -116,18 +146,46 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-  
-<!-- <script>
-    var col = document.getElementsByClassName("Cvalues");
-    // var col2 = document.getElementsByClassName("testing-none");
-    var i;
-    console.log("ccccc", col);
-    console.log("cccddd", col2);
-    for (i = 0; i < col.length; i++) {
-    col[i].addEventListener("click", function() {
-    $(".is-open").css("display","none");
-    //   this.classList.toggle("active");
-
+<script>
+     //product feature collapse section
+  var coll = document.getElementsByClassName("accordation-head");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", disnone)
+     
+        function disnone(){
+            $(".accordion-content").addClass("disable");
+            
+      var content = this.nextElementSibling;
+    //  content.style.display = "inline-block"
+    if($(content).hasClass( "disable" )){
+   $(content).removeClass("disable");
+   
+    }
+        }
   }
-    )}
+</script>
+
+
+
+<!-- Without loop-->
+
+<!-- <script>
+    //product feature collapse section
+//  var coll = document.getElementsByClassName("accordation-head");
+//  var i;
+//  for (i = 0; i < coll.length; i++) {
+    $("accordation-head").addEventListener("click", disnone)
+    
+       function disnone(){
+           $(".accordion-content").addClass("disable");
+           
+     var content = this.nextElementSibling;
+   //  content.style.display = "inline-block"
+   if($(content).hasClass( "disable" )){
+  $(content).removeClass("disable");
+  
+   }
+       }
+ 
 </script> -->
